@@ -22,7 +22,7 @@ The goal of this project was to design and implement a customizable neural netwo
 ## How to use and contribute
 
 
-You can start forking, cloning, and installing the requirements. After this you can start using and contributing to this project!
+You can start forking, cloning, and installing the requirements. After this you can start using and contributing to NeuralNetLab!
 
 See the examples section for more usage examples.
 
@@ -176,21 +176,19 @@ The following hyperparameters can be specified when initializing a NeuralNetwork
 
 These hyperparameters are then used to train the model.
 
-Note that this code only includes a subset of the possible hyperparameters listed in the previous example. To include all of the hyperparameters, you would need to add the additional key-value pairs to the params dictionary.
-
 Hyperparameter tunning can be carried out using the built-in `GridSearch` class.
 
 
 ## Examples
 
 
-In the notebooks folder ('./notebooks') there are examples for regression (uni and multivariate), classification (binary and multiclass) and hyperparameter tunning. Note that these notebooks may not run if they are not in the root of the project, in this case, you can move from the notebooks folder to the root of the project.
+In the notebooks folder ('./notebooks') there are examples for regression (uni and multivariate), classification (binary and multiclass) and hyperparameter tunning. Note that these notebooks may not run if they are not in the root of the project, in this case, you can move them from the notebooks folder to the root of the project.
 
 
 ## Limitations
 
 
-The neural network's architecture is limited to a Multi-layer Perceptron (MLP) with fully connected layers, which may not be suitable for all types of data and tasks. In particular, the MLP architecture may struggle to learn complex relationships and patterns in the data, such as those found in images and natural language.  Other types of neural network architectures, such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs), may be better suited to these types of data and tasks. The current version also don't support hidden layers with different number of neurons, unless the user add the layers manually using the `add_layer()` and `build()` methods of the model class.
+The neural network's architecture is limited to a Multi-layer Perceptron (MLP) with fully connected layers, which may not be suitable for all types of data and tasks. In particular, the MLP architecture may struggle to learn complex relationships and patterns in the data, such as those found in images and natural language. Other types of neural network architectures, such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs), may be better suited to these types of data and tasks. The current version also don't support hidden layers with different number of neurons, unless the user add the layers manually using the `add_layer()` and `build()` methods of the model class. The current implementation also lacks batch and layer normalization.
 
 
 ## References
