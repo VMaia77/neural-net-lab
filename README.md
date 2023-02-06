@@ -38,7 +38,7 @@ The implemented neural network is a Multi-layer Perceptron (MLP) consisting of a
 
 For regression tasks, the neural network predicts continuous values. The model's predictions can be compared to the true values using a threshold of precision, which measures the absolute difference between the predictions and true values and compare the error with a threshold value. The model can also be evaluated using the mean absolute error (MAE), mean squared error (MSE), and root mean squared error (RMSE). Normalized versions of these metrics, such as MAE divided by the standard deviation of the true values (y) (MAEr) or MSE divided by the standard deviation of y, can also be used. However, only MAEr and the threshold of precision are implemented in the library.
 
-It's common to confuse the term 'multivariate regression' with 'multiple regression', however, multivariate regression is a method where multiple dependent variables are predicted using one or more independent variables. In contrast, multiple regression analysis is a technique that uses multiple independent variables to predict one or more dependent variables. The model works for both.
+It's common to confuse the term 'multivariate regression' with 'multiple regression' and 'multivariable regression', however, multivariate regression is a method where multiple dependent variables are predicted using one or more independent variables. In contrast, multiple and multivariable regression analysis is a technique that uses multiple independent variables to predict one or more dependent variables. The model works for both.
 
 
 ### **Accuracies**
@@ -47,7 +47,7 @@ It's common to confuse the term 'multivariate regression' with 'multiple regress
 `AccuracyRegressionThreshold` (Precision threshold): This measures the absolute difference between the model's predictions and the true values and compares it to a specified threshold (precision). It returns a boolean array indicating whether the difference between the predictions and true values is less than the threshold for each sample. For example, if the predictions are [1.2, 3.4, 5.6] and the true values are [1.0, 3.5, 5.7], and the threshold is 0.5, the result would be [True, True, False]. This means that the model's predictions are within the specified threshold of the true values for the first two samples, but not for the third sample.
 
 This accuracy metric is useful for regression tasks where you want to know how close the model's predictions are to the true values. By setting the threshold to a higher or lower value, you can control how much error you are willing to tolerate.
-The neural network model is capable of predicting multiple continuous values for each sample in the input data, making it suitable for multivariable regression tasks.
+The neural network model is capable of predicting multiple continuous values for each sample in the input data, making it suitable for multivariate regression tasks.
 
 
 `AccuracyRegressionMAEr` (Mean absolute error relative to std of y): this metric measures the model's accuracy for regression tasks by calculating the mean absolute error (MAE) relative to the standard deviation of the true values (y) it calculates the average absolute difference between the model's predictions and the true values, normalized by the spread of the true values. This helps to account for cases where the true values have a large or variable range, as it helps to normalize and interpret the error.
@@ -66,7 +66,7 @@ The neural network model is capable of predicting multiple continuous values for
 
 For classification tasks, the neural network predicts discrete classes. The model can be evaluated using accuracy, which measures the proportion of correct predictions. The neural network supports binary and categorical classification.
 
-For multivariable binary classification tasks, the neural network model is capable of predicting multiple discrete classes for each sample in the input data. 
+For multivariate binary classification tasks, the neural network model is capable of predicting multiple discrete classes for each sample in the input data. 
 
 
 ### **Accuracies**
