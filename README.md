@@ -188,7 +188,7 @@ In the notebooks folder ('./notebooks') there are examples for regression (uni a
 ## Limitations
 
 
-The neural network's architecture is limited to a Multi-layer Perceptron (MLP) with fully connected layers, which may not be suitable for all types of data and tasks. In particular, the MLP architecture may struggle to learn complex relationships and patterns in the data, such as those found in images and natural language. Other types of neural network architectures, such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs), may be better suited to these types of data and tasks. The current version also don't support hidden layers with different number of neurons, unless the user add the layers manually using the `add_layer()` and `build()` methods of the model class. The current implementation also lacks batch and layer normalization.
+This implementation primarily focuses on function approximation, and is limited to a Multi-layer Perceptron (MLP) architecture with fully connected layers. The MLP architecture may struggle to learn complex relationships and patterns in data, such as those found in images and natural language. Other neural network architectures, such as convolutional neural networks (CNNs), recurrent neural networks (RNNs, LSTMs) and transformers, may be better suited to these types of data and tasks. The current version also lacks the ability to have hidden layers with varying numbers of neurons, batch/layer normalization, and automatic differentiation. For tabular data, gradient-boosted tree ensembles may be a better choice according (Borisov et al. 2022), though neural networks and deep learning can also be used.
 
 
 ## References
@@ -199,6 +199,7 @@ The neural network's architecture is limited to a Multi-layer Perceptron (MLP) w
 
 - https://github.com/keras-team/keras
 
+- Borisov, V., Leemann, T., Seßler, K., Haug, J., Pawelczyk, M., & Kasneci, G. . Deep neural networks and tabular data: A survey. IEEE Transactions on Neural Networks and Learning Systems (2022) (https://arxiv.org/abs/2110.01889).
 
 The main reference of this project was this book:
 
