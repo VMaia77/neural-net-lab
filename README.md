@@ -1,7 +1,10 @@
 ## **NeuralNetLab**
 
 
-The goal of this project was to design and implement a customizable neural network library from scratch in Python. The resulting library offers a user-friendly interface for creating and training neural networks. The project is open-source, feel free to contribute.
+The goal of this project was to implement a customizable neural network library from scratch in python for experimentation purposes. 
+
+The resulting library offers a user-friendly interface for creating and training neural networks using python and numpy. 
+
 
 ## Table of contents
 
@@ -23,7 +26,6 @@ The goal of this project was to design and implement a customizable neural netwo
 
 
 You can start forking, cloning, and installing the requirements. After this you can start using and contributing to NeuralNetLab!
-
 See the examples section for more usage examples.
 
 
@@ -188,7 +190,7 @@ In the notebooks folder ('./notebooks') there are examples for regression (uni a
 ## Limitations
 
 
-This implementation primarily focuses on function approximation, and is limited to a Multi-layer Perceptron (MLP) architecture with fully connected layers. The MLP architecture may struggle to learn complex relationships and patterns in data, such as those found in images and natural language. Other neural network architectures, such as convolutional neural networks (CNNs), recurrent neural networks (RNNs, LSTMs) and transformers, may be better suited to these types of data and tasks. The current version also lacks the ability to have hidden layers with varying numbers of neurons, batch/layer normalization, and automatic differentiation. For tabular data, gradient-boosted tree ensembles may be a better choice according (Borisov et al. 2022), though neural networks and deep learning can also be used.
+This implementation primarily focuses on experimentation and educational purposes. It's limited to a Multi-layer Perceptron (MLP) architecture with fully connected layers. The MLP architecture may struggle to learn complex relationships and patterns in data, such as those found in images and natural language. Other neural network architectures, such as convolutional neural networks (CNNs), recurrent neural networks (RNNs, LSTMs) and transformers, may be better suited to these types of data and tasks. The current version also lacks the ability to have hidden layers with varying numbers of neurons, batch/layer normalization, and automatic differentiation. Actually, there are many other limitations that are not worth to mention here because the aim of this project is not to be used in real life applications.
 
 
 ## References
@@ -198,8 +200,6 @@ This implementation primarily focuses on function approximation, and is limited 
 - https://github.com/tensorflow/tensorflow
 
 - https://github.com/keras-team/keras
-
-- Borisov, V., Leemann, T., Seßler, K., Haug, J., Pawelczyk, M., & Kasneci, G. . Deep neural networks and tabular data: A survey. IEEE Transactions on Neural Networks and Learning Systems (2022) (https://arxiv.org/abs/2110.01889).
 
 The main reference of this project was this book:
 
